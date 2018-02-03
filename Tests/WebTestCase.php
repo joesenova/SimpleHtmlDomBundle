@@ -29,7 +29,7 @@ abstract class WebTestCase extends BaseWebTestCase
     {
         require_once __DIR__.'/Fixtures/app/AppKernel.php';
 
-        return 'Erivello\SimpleHtmlDomBundle\Tests\Functional\AppKernel';
+        return 'Enemis\SimpleHtmlDomBundle\Tests\Functional\AppKernel';
     }    
 
     protected static function createKernel(array $options = array())

@@ -1,22 +1,20 @@
 SimpleHtmlDomBundle
 ===================
 
-This bundle provides a simple integration of the [Simple HTML DOM Parser][1] into Symfony2.
+Original package https://github.com/erivello/SimpleHtmlDomBundle was abandoned.
+This is attempt to giving to good bundle second chance.
+This bundle provides a simple integration of the [Simple HTML DOM Parser][1] into Symfony2|3.
+##I will do my best to support and timely update this package to supporting latest Symfony version.
+
 Simple HTML DOM Parser is a HTML DOM parser written in PHP5+ that let you manipulate HTML, 
 find tags on an HTML page with selectors just like jQuery and extract contents from HTML.
-
-[![Build Status](https://travis-ci.org/erivello/SimpleHtmlDomBundle.png)](https://travis-ci.org/erivello/SimpleHtmlDomBundle)
 
 Installation
 ------------
 
 Installation is very easy, it makes use of [Composer][2].
 
-Add SimpleHtmlDomBundle to your composer.json
-
-    "require": {
-        "erivello/simple-html-dom-bundle": "dev-master"
-    }
+## composer require enemis/simple-html-dom-bundle
 
 Register the bundle in `app/AppKernel.php`:
 
@@ -29,7 +27,7 @@ public function registerBundles()
     $bundles = array(
         // ...
 
-        new Erivello\SimpleHtmlDomBundle\ErivelloSimpleHtmlDomBundle(),
+        new Enemis\SimpleHtmlDomBundle\ErivelloSimpleHtmlDomBundle(),
     );
 }
 ```
