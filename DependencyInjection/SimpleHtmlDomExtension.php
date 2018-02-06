@@ -8,11 +8,11 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * EnemisSimpleHtmlDomExtension.
+ * SimpleHtmlDomExtension.
  *
  * @author Edoardo Rivello <edoardo.rivello@gmail.com>
  */
-class EnemisSimpleHtmlDomExtension extends Extension
+class SimpleHtmlDomExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {

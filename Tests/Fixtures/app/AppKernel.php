@@ -47,7 +47,7 @@ class AppKernel extends Kernel
     {
         return array(
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new \Enemis\SimpleHtmlDomBundle\ErivelloSimpleHtmlDomBundle(),
+            new Enemis\SimpleHtmlDomBundle\SimpleHtmlDomBundle(),
         );
     }
 

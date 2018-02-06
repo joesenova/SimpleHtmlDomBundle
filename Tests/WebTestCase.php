@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Erivello\SimpleHtmlDomBundle\Tests;
+namespace Enemis\SimpleHtmlDomBundle\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase as BaseWebTestCase;
 
