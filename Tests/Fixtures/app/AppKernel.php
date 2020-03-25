@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Enemis\SimpleHtmlDomBundle\Tests\Functional;
+namespace MacroProg\SimpleHtmlDomBundle\Tests\Functional;
 
 // get the autoload file
 $dir = __DIR__;
@@ -47,7 +47,7 @@ class AppKernel extends Kernel
     {
         return array(
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Enemis\SimpleHtmlDomBundle\SimpleHtmlDomBundle(),
+            new MacroProg\SimpleHtmlDomBundle\SimpleHtmlDomBundle(),
         );
     }
 

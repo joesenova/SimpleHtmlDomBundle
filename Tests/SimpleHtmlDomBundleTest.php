@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Enemis\SimpleHtmlDomBundle\Tests;
+namespace MacroProg\SimpleHtmlDomBundle\Tests;
 
-use Enemis\SimpleHtmlDomBundle\Tests\WebTestCase;
+use MacroProg\SimpleHtmlDomBundle\Tests\WebTestCase;
 
 class SimpleHtmlDomBundleTest extends WebTestCase
 {

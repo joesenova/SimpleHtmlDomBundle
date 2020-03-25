@@ -1,6 +1,6 @@
 <?php
 
-namespace Enemis\SimpleHtmlDomBundle;
+namespace MacroProg\SimpleHtmlDomBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -3,7 +3,7 @@ SimpleHtmlDomBundle
 
 Original package https://github.com/erivello/SimpleHtmlDomBundle was abandoned.
 This is attempt to giving to good bundle second chance.
-This bundle provides a simple integration of the [Simple HTML DOM Parser][1] into Symfony2|3.
+This bundle provides a simple integration of the [Simple HTML DOM Parser][1] into Symfony 5.
 ##I will do my best to support and timely update this package to supporting latest Symfony version.
 
 Simple HTML DOM Parser is a HTML DOM parser written in PHP5+ that let you manipulate HTML, 
@@ -14,7 +14,7 @@ Installation
 
 Installation is very easy, it makes use of [Composer][2].
 
-## composer require enemis/simple-html-dom-bundle
+## composer require macroprog/simple-html-dom-bundle
 
 Register the bundle in `app/AppKernel.php`:
 
@@ -27,7 +27,7 @@ public function registerBundles()
     $bundles = array(
         // ...
 
-        new Enemis\SimpleHtmlDomBundle\ErivelloSimpleHtmlDomBundle(),
+        new MacroProg\SimpleHtmlDomBundle\SimpleHtmlDomBundle(),
     );
 }
 ```

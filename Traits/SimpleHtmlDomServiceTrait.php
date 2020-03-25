@@ -1,10 +1,7 @@
 <?php
 
-namespace Enemis\SimpleHtmlDomBundle\Traits;
+namespace MacroProg\SimpleHtmlDomBundle\Traits;
 
-/**
- * @author Andrey Stadnik <astadnik.enemis@gmail.com>
- */
 trait SimpleHtmlDomServiceTrait
 {
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Enemis\SimpleHtmlDomBundle\DependencyInjection;
+namespace MacroProg\SimpleHtmlDomBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
