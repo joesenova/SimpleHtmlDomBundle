@@ -11,17 +11,15 @@
 
 namespace MacroProg\SimpleHtmlDomBundle\Tests;
 
-use MacroProg\SimpleHtmlDomBundle\Tests\WebTestCase;
-
 class SimpleHtmlDomBundleTest extends WebTestCase
 {
-    public function testRegister()
-    {
-        $client = static::createClient();
-        $container = $client->getContainer();
-        
-        $parser = $container->get('simple_html_dom');   
-        
-        $this->assertTrue($parser instanceof \simple_html_dom);
-    }
+	public function testRegister()
+	{
+		$client = static::createClient();
+		$container = $client->getContainer();
+
+		$parser = $container->get('simple_html_dom');
+
+		$this->assertTrue($parser instanceof \simple_html_dom);
+	}
 }
