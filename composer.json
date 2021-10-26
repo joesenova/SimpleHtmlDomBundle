@@ -1,9 +1,9 @@
 {
-    "name": "macroprog/simple-html-dom-bundle",
+    "name": "iloh/simple-html-dom-bundle",
     "description": "The maintained version of 'Bundle around Simple HTML DOM library'",
     "type": "symfony-bundle",
     "keywords": ["html", "dom", "php"],
-    "homepage": "https://github.com/macroprog/SimpleHtmlDomBundle",
+    "homepage": "https://github.com/ilohpro/SimpleHtmlDomBundle",
     "license": "MIT",
     "authors": [
         {
@@ -29,11 +29,11 @@
     },
     "require-dev": {
         "phpunit/phpunit": "8.*",
-        "symfony/browser-kit": "~4.0|~5.0"
+        "symfony/browser-kit": "4.* || 5.*"
     },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": { "MacroProg\\SimpleHtmlDomBundle\\": ""},
+        "psr-4": { "Iloh\\SimpleHtmlDomBundle\\": ""},
         "classmap": [ "lib" ]
     }
 }
