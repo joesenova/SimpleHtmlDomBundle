@@ -1,6 +1,6 @@
 <?php
 
-namespace MacroProg\SimpleHtmlDomBundle\DependencyInjection;
+namespace Iloh\SimpleHtmlDomBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

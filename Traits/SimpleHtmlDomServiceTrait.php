@@ -1,6 +1,6 @@
 <?php
 
-namespace MacroProg\SimpleHtmlDomBundle\Traits;
+namespace Iloh\SimpleHtmlDomBundle\Traits;
 
 trait SimpleHtmlDomServiceTrait
 {

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MacroProg\SimpleHtmlDomBundle\Tests;
+namespace Iloh\SimpleHtmlDomBundle\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase as BaseWebTestCase;
 
@@ -29,7 +29,7 @@ abstract class WebTestCase extends BaseWebTestCase
     {
         require_once __DIR__.'/Fixtures/app/AppKernel.php';
 
-        return 'MacroProg\SimpleHtmlDomBundle\Tests\Fixtures\app\AppKernel';
+        return 'Iloh\SimpleHtmlDomBundle\Tests\Fixtures\app\AppKernel';
     }    
 
     protected static function createKernel(array $options = array())

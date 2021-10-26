@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MacroProg\SimpleHtmlDomBundle\Tests\Fixtures\app;
+namespace Iloh\SimpleHtmlDomBundle\Tests\Fixtures\app;
 
 // get the autoload file
 $dir = __DIR__;
@@ -30,7 +30,7 @@ while ($dir !== $lastDir) {
 	$dir = dirname($dir);
 }
 
-use MacroProg\SimpleHtmlDomBundle\SimpleHtmlDomBundle;
+use Iloh\SimpleHtmlDomBundle\SimpleHtmlDomBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;

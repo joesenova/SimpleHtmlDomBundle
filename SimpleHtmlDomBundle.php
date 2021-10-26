@@ -1,6 +1,6 @@
 <?php
 
-namespace MacroProg\SimpleHtmlDomBundle;
+namespace Iloh\SimpleHtmlDomBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

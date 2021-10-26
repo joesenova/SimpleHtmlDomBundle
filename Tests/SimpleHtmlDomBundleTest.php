@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MacroProg\SimpleHtmlDomBundle\Tests;
+namespace Iloh\SimpleHtmlDomBundle\Tests;
 
 class SimpleHtmlDomBundleTest extends WebTestCase
 {
