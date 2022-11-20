@@ -23,17 +23,17 @@
 	],
 	"require":           {
 		"php":                      ">=8.1",
-		"symfony/framework-bundle": "*",
-		"symfony/finder":           "*",
-		"symfony/yaml":             "*",
-		"symfony/form":             "*",
-		"symfony/security-csrf":    "*",
-		"symfony/validator":        "*",
-		"doctrine/annotations":     "*"
+		"doctrine/annotations":     "^1.0",
+		"symfony/framework-bundle": "^5.0 || ^6.0",
+		"symfony/finder":           "^5.0 || ^6.0",
+		"symfony/form":             "^5.0 || ^6.0",
+		"symfony/security-csrf":    "^5.0 || ^6.0",
+		"symfony/validator":        "^5.0 || ^6.0",
+		"symfony/yaml":             "^5.0 || ^6.0"
 	},
 	"require-dev":       {
-		"phpunit/phpunit":     "*",
-		"symfony/browser-kit": "*"
+		"phpunit/phpunit":     "^9.0",
+		"symfony/browser-kit": "^5.0 || ^6.0"
 	},
 	"minimum-stability": "stable",
 	"autoload":          {
