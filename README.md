@@ -14,7 +14,7 @@ Installation
 
 Installation is very easy, it makes use of [Composer][2].
 
-## composer require iloh/simple-html-dom-bundle
+## composer require joesenova/simple-html-dom-bundle
 
 Register the bundle in `app/AppKernel.php`:
 
@@ -27,7 +27,7 @@ public function registerBundles()
     $bundles = array(
         // ...
 
-        new Iloh\SimpleHtmlDomBundle\SimpleHtmlDomBundle(),
+        new Joesenova\SimpleHtmlDomBundle\SimpleHtmlDomBundle(),
     );
 }
 ```

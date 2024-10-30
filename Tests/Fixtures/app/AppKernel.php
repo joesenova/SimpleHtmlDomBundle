@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Iloh\SimpleHtmlDomBundle\Tests\Fixtures\app;
+namespace Joesenova\SimpleHtmlDomBundle\Tests\Fixtures\app;
 
 // get the autoload file
 $dir = __DIR__;
@@ -30,7 +30,8 @@ while ($dir !== $lastDir) {
 	$dir = dirname($dir);
 }
 
-use Iloh\SimpleHtmlDomBundle\SimpleHtmlDomBundle;
+use Exception;
+use Joesenova\SimpleHtmlDomBundle\SimpleHtmlDomBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
@@ -45,45 +46,48 @@ class AppKernel extends Kernel
 		parent::__construct($environment, $debug);
 	}
 
-	public function registerBundles()
-	{
-		return array(
+	public function registerBundles(): iterable
+    {
+		return [
 			new FrameworkBundle(),
 			new SimpleHtmlDomBundle(),
-		);
+		];
 	}
 
 	public function init()
 	{
 	}
 
-	public function getRootDir()
-	{
+	public function getRootDir(): string
+    {
 		return __DIR__;
 	}
 
-	public function getCacheDir()
-	{
+	public function getCacheDir(): string
+    {
 		return sys_get_temp_dir().'/'.Kernel::VERSION.'/simple-html-dom-bundle/cache/'.$this->environment;
 	}
 
-	public function getLogDir()
-	{
+	public function getLogDir(): string
+    {
 		return sys_get_temp_dir().'/'.Kernel::VERSION.'/simple-html-dom-bundle/logs';
 	}
 
-	public function registerContainerConfiguration(LoaderInterface $loader)
-	{
+    /**
+     * @throws Exception
+     */
+    public function registerContainerConfiguration(LoaderInterface $loader): void
+    {
 		$loader->load(__DIR__.'/config/'.$this->environment.'.yml');
 	}
 
-	public function serialize()
-	{
+	public function serialize(): string
+    {
 		return serialize(array($this->getEnvironment(), $this->isDebug()));
 	}
 
-	public function unserialize($str)
-	{
+	public function unserialize($str): void
+    {
 		call_user_func_array(array($this, '__construct'), unserialize($str));
 	}
 }

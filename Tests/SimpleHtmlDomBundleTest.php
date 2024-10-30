@@ -9,17 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Iloh\SimpleHtmlDomBundle\Tests;
+namespace Joesenova\SimpleHtmlDomBundle\Tests;
+
+use simple_html_dom;
 
 class SimpleHtmlDomBundleTest extends WebTestCase
 {
-	public function testRegister()
+
+
+    public function testRegister()
 	{
 		$client = static::createClient();
 		$container = $client->getContainer();
 
-		$parser = $container->get('simple_html_dom');
-
-		$this->assertTrue($parser instanceof \simple_html_dom);
+		$this->assertTrue($container->get('simple_html_dom') instanceof \simple_html_dom);
 	}
 }

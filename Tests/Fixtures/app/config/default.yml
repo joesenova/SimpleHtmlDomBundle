@@ -2,15 +2,29 @@ framework:
     secret:        test
     csrf_protection:
         enabled: true
-    validation:    { enabled: true, enable_annotations: true }
+    validation:
+        enabled: true
+        enable_attributes: true
+        email_validation_mode: html5
     form: ~
     test: ~
     default_locale: en
     session:
-        storage_id:     session.storage.mock_file
+        cookie_secure:      auto
+        cookie_samesite:    lax
+        handler_id:         null
     profiler:      { only_exceptions: false }
+    http_method_override:   false
+    handle_all_throwables: true
+    php_errors:
+        log: true
 
 services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
     simple_html_dom:
         class: simple_html_dom
+        public: true
 

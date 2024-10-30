@@ -9,36 +9,38 @@
  * file that was distributed with this source code.
  */
 
-namespace Iloh\SimpleHtmlDomBundle\Tests;
+namespace Joesenova\SimpleHtmlDomBundle\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase as BaseWebTestCase;
+use Symfony\Component\DependencyInjection\Container;
+use Symfony\Component\HttpKernel\KernelInterface;
 
 abstract class WebTestCase extends BaseWebTestCase
 {
-    protected function getContainer(array $options = array())
+    protected static function getContainer(array $options = array()): Container
     {
         if (!static::$kernel) {
             static::$kernel = static::createKernel($options);
         }
         static::$kernel->boot();
 
-        return static::$kernel->getContainer();
+        return static::getContainer()->get(static::$kernel->getContainer()->getParameter('simple_html_dom'));
     }
     
-    protected static function getKernelClass()
+    protected static function getKernelClass(): string
     {
         require_once __DIR__.'/Fixtures/app/AppKernel.php';
 
-        return 'Iloh\SimpleHtmlDomBundle\Tests\Fixtures\app\AppKernel';
+        return 'Joesenova\SimpleHtmlDomBundle\Tests\Fixtures\app\AppKernel';
     }    
 
-    protected static function createKernel(array $options = array())
+    protected static function createKernel(array $options = array()): KernelInterface
     {
         $class = self::getKernelClass();
 
         return new $class(
             'default',
-            isset($options['debug']) ? $options['debug'] : true
+            $options['debug'] ?? true
         );
     }
 }
